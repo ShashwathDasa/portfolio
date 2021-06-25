@@ -1,7 +1,5 @@
 *{
     margin: 0 auto;
-    background:  #121212;
-    color:gainsboro;
     font-family: Roboto Slab;
 }
 
@@ -35,6 +33,11 @@ nav a {
     line-height: 1.6;
     font-size: 1.5rem;
     text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    font-size: 2rem;
 }
 
 .about-me{
@@ -61,4 +64,14 @@ nav a {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+}
+
+.contact{
+    width: 80%; 
+}
+.contact img{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    margin-right: 5px;
 }
