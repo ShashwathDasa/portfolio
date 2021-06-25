@@ -1,0 +1,64 @@
+*{
+    margin: 0 auto;
+    background:  #121212;
+    color:gainsboro;
+    font-family: Roboto Slab;
+}
+
+header{
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+    //background: rgb(26, 25, 31);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    
+    padding: 1.875rem;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.about-me{
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template: repeat(20, 1fr)/ repeat(20,1fr);
+}
+
+.about-me h2{
+    margin-bottom: 15px;
+    grid-column: 1 / span 2;
+}
+
+.about-me p{
+    grid-column: 1 / span 16;
+    grid-row: 2 / 21;
+    text-align: justify; 
+}
+
+.about-me img{
+    grid-column: 17 / 21;
+    grid-row: 1/10;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
