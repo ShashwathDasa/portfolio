@@ -7,14 +7,15 @@ header{
     position: sticky;
     z-index: 100;
     width: 100%;
-    //background: rgb(26, 25, 31);
+    background-color: rgb(226, 226, 226);
+    
 }
 
 header .container{
     display: flex;
     align-items: center;
-    
-    padding: 1.875rem;
+    padding: 1.1rem 0;
+    justify-content: center;
 }
 
 header nav ul{
@@ -44,12 +45,15 @@ nav a:hover{
     margin: 0 auto;
     width: 80%;
     display: grid;
-    grid-template: repeat(5, 1fr)/ repeat(20,1fr);
+    grid-template: repeat(4, 1fr)/ repeat(20,1fr);
+    margin-left: 200px;
+    margin-bottom: 15px;
 }
 
 .about-me h2{
     margin-bottom: 15px;
     grid-column: 1 / span 2;
+    margin-top: 10px;
 }
 
 .about-me p{
@@ -64,12 +68,15 @@ nav a:hover{
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    margin-top: 30px;
 }
 
 .education {
     display: grid;
     grid-template: repeat(10,50px) / repeat(10,1fr);
     width: 80%;
+    margin-bottom: 100px;
+    margin-left: 200px;
 }
 
 .circle{
@@ -125,12 +132,26 @@ div span{
     color: green;
 }
 
-.contact{
-    width: 80%; 
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(226, 226, 226);
 }
+
+.contact{
+    width: 80%;
+    text-align: right;
+}
+
+.contact p{
+    padding-right: 12px;
+}
+
 .contact img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius:50%;
     margin-right: 5px;
     margin-top: 10px;
@@ -139,10 +160,14 @@ div span{
 #work-heading{
     width: 80%;
     margin-bottom: 20px;
+    margin-left: 200px;
+    margin-top: 10px;
 }
 
 .work-main{
     width: 80%;
+    margin-bottom: 100px;
+    margin-right: 100px;
 }
 
 .maini{
@@ -174,7 +199,7 @@ div span{
 
 .xpredict img{
     grid-area: 1 / 8 / 10 /11;
-    width: 250px;
+    width: 300px;
     height: 150px;
 }
 .xpredict div{
@@ -189,9 +214,29 @@ div span{
 
 .pes img{
     grid-area:1/ 2 / 5 / 5; 
-    width: 250px;
+    width: 300px;
     height: 100px;
 }
 .pes div{
     grid-area: 1 / 6 / 10 / 11;
 }
+
+.date{
+    color: red;
+    font-weight: 900;
+}
+
+.skills-main {
+    width: 80%;
+    display: flex;
+    justify-items: center;
+    font-size: 1.2rem;
+}
+
+#skills-heading{
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
